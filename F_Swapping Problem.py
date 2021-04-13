@@ -16,18 +16,10 @@ def Main(a,b):
     for i,j in zip(a,b):
         sum+=abs(i-j)
     print(sum)
-
-
 size=int(input())
 a=[]
 b=[]
-for i in range(0,size):
-    x=int(input())
-    a.append(x)
-
-for i in range(0,size):
-    y=int(input())
-    b.append(y)
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
 
 Main(a,b)
-
