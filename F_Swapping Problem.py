@@ -10,9 +10,6 @@ def Main(a,b):
     b[PosOfLargestNumber(b)]=b[PositionOfMaxOfa]  
     b[PositionOfMaxOfa]=temp
     sum=0
-    listoflist=[]
-    listoflist.append(a)
-    listoflist.append(b)
     for i,j in zip(a,b):
         sum+=abs(i-j)
     print(sum)
